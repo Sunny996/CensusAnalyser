@@ -2,7 +2,10 @@ package com.censusanalyser;
 
 public class CensusAnalyserException extends RuntimeException {
     enum ExceptionType {
-        CENSUS_FILE_PROBLEM, UNABLE_TO_PARSE, NO_CENSUS_DATA, CSV_FILE_INTERNAL_ISSUES
+        CENSUS_FILE_PROBLEM,
+        CENSUS_INCORRECT_FILE_FORMAT,
+        WRONG_FILE_PATH,
+        CSV_FILE_INTERNAL_ISSUE
     }
 
     ExceptionType type;
